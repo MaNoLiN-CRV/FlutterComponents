@@ -12,14 +12,15 @@ class Listview2Screen extends StatelessWidget {
         'https://static01.nyt.com/images/2023/04/20/fashion/20HASBULLA/20HASBULLA-articleLarge.jpg?quality=100&auto=webp&disable=upscale'
   };
 
-  const Listview2Screen({Key? key}) : super(key: key);
+  const Listview2Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
     final keys = options.keys.toList();
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Listview Tipo 2'),
+        title: const Text('MEMES DEL MOMENTO'),
+        backgroundColor: Colors.deepPurple[900],
       ),
       body: ListView.separated(
         itemBuilder: (context, index) {
@@ -27,7 +28,7 @@ class Listview2Screen extends StatelessWidget {
           final imageUrl = options[title]!;
 
           return ListTile(
-            trailing: const Icon(Icons.arrow_forward_ios_outlined),
+            trailing: const Icon(Icons.trending_up_outlined),
             title: Text(title),
             onTap: () {
               Navigator.push(

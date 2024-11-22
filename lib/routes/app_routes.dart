@@ -1,7 +1,6 @@
 import 'package:fl_components/models/models.dart';
 import 'package:fl_components/screens/screens.dart';
 import 'package:flutter/material.dart';
-import 'package:fl_components/widgets/widgets.dart';
 
 class AppRoutes {
   static const initialRoute = 'home';
@@ -20,7 +19,7 @@ class AppRoutes {
     MenuOption(
         route: 'listview2',
         icon: Icons.list,
-        name: 'Listview tipo 2',
+        name: 'MEMES',
         screen: const Listview2Screen()),
     MenuOption(
         route: 'card',

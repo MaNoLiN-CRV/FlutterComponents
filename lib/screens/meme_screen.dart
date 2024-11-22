@@ -12,7 +12,6 @@ class MemeScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text('TRENDING MEMES'),
-          //backgroundColor: Colors.blueAccent,
         ),
         body: cardTipo2);
   }
